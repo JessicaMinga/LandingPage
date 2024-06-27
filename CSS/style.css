@@ -9,9 +9,9 @@ body{
 header {
     margin: 0;
     padding: 0;
-    position: relative;
+   
     height: 90vh;
-    background-image: url('IMG/OIP.jpeg');
+    background-image: url('IMG/OIP iii.jpeg');
     background-size: cover;
     background-position: center;
   }
@@ -19,12 +19,11 @@ header {
     filter: brightness(0.5); /*opacidad a imagen   */
     position: absolute;
     width: 100%;
-    height: 90vh;
-    object-fit: cover;
-    margin-top: auto;
+    height: 90vh; 
+    object-fit: cover
   }
   #header-top {
-    position: absolute; 
+    position: relative;
     width: 100%; 
     height: 8%;
     display: flex;
@@ -37,6 +36,7 @@ header {
     margin: 15px; /* Agrega un margen de 10px alrededor de cada div */
     padding: 15px; /* Agrega un padding de 10px alrededor de cada div */
   }
+ 
   @media (max-width: 768px) {
     header {
       background-size: 100% 300px; /* ajusta el tamaño de la imagen de fondo para pantallas pequeñas */
