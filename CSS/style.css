@@ -6,21 +6,30 @@ body{
     margin: 0;
     padding: 0;
 }
-header {
-    margin: 0;
-    padding: 0;
-    background-image: url('IMG/OIP.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 850px; 
-  }
-  header img#rectanguloP {
-    filter: brightness(0.5); /*opacidad a imagen   */
-    position: absolute;
-    width: 100%;
-    height: 1450px; 
-    object-fit: cover;
-  }
+
+.header-image {
+  position: relative;
+  width: 100%;
+  height: 700px;
+}
+
+.background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  object-fit: cover;
+}
+
+.foreground-image {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply; 
+
+}
+
   #header-top {
     position: relative;
     width: 100%; 
@@ -29,6 +38,9 @@ header {
     justify-content: space-around; /* ajusta la distribución de los elementos */
     align-items: center; 
     border-bottom: 1px solid #fff;
+  }
+  img#logop{
+    display: none;
   }
   .encabezado {
     align-items: center;
@@ -117,37 +129,78 @@ header {
   justify-content: flex-start;
   align-items: center;
   position: relative; 
-  height: 90%; 
+  height: 60%; 
   z-index: 1;
   padding: 2%;
   padding-left: 0;
   padding-right: 0;
   
 }
-.imagenes{
-  width: 50%;
+.imagenes {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 50%; /* ajusta el ancho máximo a la mitad de la pantalla */
+  margin: 0 auto; /* centra el contenedor */
 }
-.imagenes img{
-  height:400px;
-  width: 400px;
-  object-fit: contain;
-  background-image: url('imagen.jpg');
-  background-size: contain;
+img#imagenest.first-image {
+  width: 15%;
+}
+.imagenes img {
+  width: 36%;
 }
 .inf{
   width: 50%;
 }
 
- .
-  @media (max-width: 768px) {
+  @media (max-width: 910px) {
+    img#logop{
+      all:unset ;
+      padding: 5%;
+    }
+    div#logo.encabezad{
+      padding: 2%;
+      width: auto;
+    }
+    .linea-vertical{
+      width: 0;
+    }
+    img#logog{
+      display: none;
+    }
+    a#habilitado.men{
+      display: none;
+    }
+    a.men{
+      display: none;
+    }
+   
     header {
       background-size: 100% 300px; /* ajusta el tamaño de la imagen de fondo para pantallas pequeñas */
     }
   }
   
   @media (max-width: 320px) {
+    img#logop{
+      all:unset ;
+      padding: 5%;
+    }
+    div#logo.encabezad{
+      padding: 2%;
+      width: auto;
+    }
+    .linea-vertical{
+      display: none;
+    }
+    img#logog{
+      display: none;
+    }
+    a#habilitado.men{
+      display: none;
+    }
+    a.men{
+      display: none;
+    }
     header {
       background-size: 100% 200px; /* ajusta el tamaño de la imagen de fondo para pantallas muy pequeñas */
     }
