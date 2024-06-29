@@ -46,8 +46,15 @@ body{
     align-items: center;
     display: flex;
     justify-content: center;
-    width: 15%;
+    width: 30%;
     padding-right: 1%;
+}
+.encabezado2 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 7%;
+  padding: 1%;
 }
   .men{
     text-decoration: none;
@@ -74,15 +81,16 @@ body{
     border: 1px solid #ccc; /* para agregar un borde */
     border-radius: 30px; /* para agregar bordes redondos */
     font-family: Brandon Grotesque;
-    margin-left: 60%;
-    margin-right: 14%;
+    margin-left: 65%;
+    margin-right: 7%;
     font-size: 100%;
     text-align: left;
-    margin-top: 5%;
     color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding-left: 3%;
   }
   .barra{
     position: relative; 
@@ -91,20 +99,20 @@ body{
     border-radius: 30px; /* para agregar bordes redondos */
     font-family: Brandon Grotesque;
     margin-left: 1%;
-    margin-right: 4%;
+    padding-right: 4%;
     font-size: 100% ;
     text-align: left;
     margin-top: 5%;
     color: #fff;
     display: flex;
-    justify-content: center;
-    width: 100%;
+    width: 67%;
+    margin-right: 33%;
   }
  #redes{
-  padding-left: 5%;
+  padding-left: 3%;
   color: #7E7E7E;
   width: 0.9%;
-  position: sticky; 
+  position: fixed; 
   display: flex;
   flex-direction:column;
   align-items: center;
@@ -113,10 +121,12 @@ body{
   width: 100%;
  }
  #titulo1{
-  padding-left: 4%;
+  padding-top: 4%;
+  padding-left: 6%;
   padding-right: 65%;
   position: relative; 
   display: flex;
+  justify-content: center;
   flex-direction:column;
   color: #fff;
   font-family: PF Regal Display Pro;
@@ -174,9 +184,24 @@ img#imagenest.first-image {
     a.men{
       display: none;
     }
+    .encabezado2 {
+      padding: auto;
+      width: 30%;
+    }
    
-    header {
-      background-size: 100% 300px; /* ajusta el tamaño de la imagen de fondo para pantallas pequeñas */
+    label#buscador, label.barra{
+     
+      margin-left: 10%;
+      margin-right: 10%;
+  
+    }
+
+    #header-top{
+      border-bottom: none;
+    }
+
+    #titulo1{
+      width: 100%;
     }
   }
   
@@ -188,6 +213,9 @@ img#imagenest.first-image {
     div#logo.encabezad{
       padding: 2%;
       width: auto;
+    }
+    #header-top{
+      border: none;
     }
     .linea-vertical{
       display: none;
@@ -201,7 +229,21 @@ img#imagenest.first-image {
     a.men{
       display: none;
     }
-    header {
-      background-size: 100% 200px; /* ajusta el tamaño de la imagen de fondo para pantallas muy pequeñas */
+  
+    .encabezado2 {
+      padding: auto;
+      width: 40%;
+    }
+    label#buscador , label.barra{
+     
+      margin-left: 20%;
+      margin-right: 20%;
+  
+    }
+    #header-top{
+      border-bottom: none;
+    }
+    #titulo1{
+      width: 100%;
     }
   }
