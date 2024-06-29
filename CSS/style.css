@@ -203,6 +203,9 @@ img#imagenest.first-image {
     #titulo1{
       width: 100%;
     }
+    div#barra1{
+      padding: none;
+    }
   }
   
   @media (max-width: 320px) {
@@ -242,6 +245,9 @@ img#imagenest.first-image {
     }
     #header-top{
       border-bottom: none;
+    }
+    div#barra1{
+      padding: none;
     }
     #titulo1{
       width: 100%;
