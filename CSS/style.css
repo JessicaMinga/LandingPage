@@ -10,7 +10,7 @@ body{
 .header-image {
   position: relative;
   width: 100%;
-  height: 700px;
+  height: 900px;
 }
 
 .background-image {
@@ -23,7 +23,6 @@ body{
 
 .foreground-image {
   position: absolute;
-
   width: 100%;
   height: 100%;
   mix-blend-mode: multiply; 
@@ -98,15 +97,11 @@ body{
     border: 1px solid #ccc; /* para agregar un borde */
     border-radius: 30px; /* para agregar bordes redondos */
     font-family: Brandon Grotesque;
-    margin-left: 1%;
-    padding-right: 4%;
     font-size: 100% ;
-    text-align: left;
-    margin-top: 5%;
+    text-align: center;
     color: #fff;
     display: flex;
-    width: 67%;
-    margin-right: 33%;
+    width: 100%;
   }
  #redes{
   padding-left: 3%;
@@ -121,46 +116,152 @@ body{
   width: 100%;
  }
  #titulo1{
-  padding-top: 4%;
+
   padding-left: 6%;
-  padding-right: 65%;
   position: relative; 
   display: flex;
   justify-content: center;
   flex-direction:column;
   color: #fff;
   font-family: PF Regal Display Pro;
-  width: 25%;
+  width: 27%;
   height: 100%;
  }
 div.container{
-  background-color: #fff;
-  display: flex;
-  justify-content: flex-start;
   align-items: center;
-  position: relative; 
-  height: 40%; 
-  z-index: 1;
-  padding: 2%;
   padding-left: 0;
   padding-right: 0;
-  
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+}
+div#carrusel{
+  position: relative;
+  padding-left: 0%;
+  padding-right: 0%;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+div#guion{
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  width: 1.5%;
+  border-bottom: 3px solid #fff;
+  margin: 1%; 
 }
 .imagenes {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 50%; /* ajusta el ancho máximo a la mitad de la pantalla */
-  margin: 0 auto; /* centra el contenedor */
+  display: grid;
+  width: 50%;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 20px;
+  height: 550px;
 }
-img#imagenest.first-image {
-  width: 15%;
+.colum1{
+  grid-column: 1;
+  background-image: url('../IMG/Mask group-12.jpg');
 }
-.imagenes img {
-  width: 36%;
+.colum2, .colum3, .colum1{
+  background-size: cover;
+  display:flex ;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
 }
+.colum2{
+  grid-column: 2;
+  background-image: url('../IMG/Mask group-14.jpg');
+}
+.colum3{
+  grid-column: 3;
+  background-image: url('../IMG/Mask group-9.jpg');
+}
+
 .inf{
   width: 50%;
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  height: 550px;
+  
+}
+.fil1{
+  grid-row: 1;
+  width: 100%;
+  text-align: right;
+}
+div#fil2{
+  grid-row: 2;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: start;
+  justify-items: center;
+}
+div#ico1{
+  grid-column: 1;
+  display: flex;
+}
+div#ico2{
+  grid-column: 2;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+div#ico3{
+  grid-column: 3;
+  display: flex;
+}
+p#sub{
+  margin-bottom: 0;
+  color: #000;
+  font-size: 30px;
+  font-family: PF Regal Display Pro;
+  width: 100%;
+  ;
+}
+p#tit{
+  margin-top: 0;
+  margin-bottom: 8%;
+  color: #000;
+  font-size: 40px;
+  font-family: PF Regal Display Pro;
+  padding-left: 8%;
+  font-weight: bold;
+  width: 92%;
+  margin-bottom: 0;
+  padding-bottom: 8%;
+}
+p#amarillo{
+  color: #DF991B;
+  font-size: 40px;
+  font-family: PF Regal Display Pro;
+  margin: auto;
+  text-align: right;
+}
+h2{
+  color: #000;
+  font-size: 80px;
+  font-family: PF Regal Display Pro;
+  margin: auto;
+  text-align: right;
+}
+a{
+  width: 100%; /* Mantiene el ancho completo */
+  text-decoration: none;
+  display: flex; /* Contenedor como flexbox */
+  align-items: center; /* Alinea el contenido verticalmente al centro */
+  justify-content: center;
+}
+p#parrafo{
+  font-size: 30px;
+  text-align: justify;
+  padding-left: 8%;
+  padding-right: 8%;
+
 }
 
   @media (max-width: 910px) {
@@ -211,9 +312,21 @@ img#imagenest.first-image {
     div#barra1{
       padding-left: 0%;
     }
-    .barra{
-      width: 100%;
+    label.barra{
+      display: flex;
+      justify-content: center;
+      height: 20%;
     }
+    h1{
+      font-size: 50%;
+      padding-left: 10%;
+    }
+    h3{
+      font-size: 25%;
+      padding-left: 10%;
+    }
+
+   
   }
   
   @media (max-width: 320px) {
@@ -252,6 +365,7 @@ img#imagenest.first-image {
     }
     label.barra{
       width: 100%;
+      height: 20%;
     }
     #header-top{
       border-bottom: none;
@@ -267,4 +381,13 @@ img#imagenest.first-image {
     .barra{
       width: 100%;
     }
+    h1{
+      font-size: 50%;
+      padding-left: 10%;
+    }
+    h3{
+      font-size: 35%;
+      padding-left: 10%;
+    }
+  
   }
