@@ -114,6 +114,9 @@ body{
   flex-direction:column;
   align-items: center;
  }
+ div#redes1{
+  display: none;
+ }
  #red{
   width: 100%;
  }
@@ -432,8 +435,8 @@ h1{
       flex-direction: column-reverse;
     }
     div.cuadro-negro{
-      display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      
     }
     div#cuadro{
       width: 100%;
@@ -441,6 +444,26 @@ h1{
     footer{
       display: none;
     }
+    img#sobreimg{
+      padding-top: 70%;
+      width: 150%;
+    }
+    div.galeria{
+      display:flex;
+      flex-direction: column;
+    }
+    div#redes1{
+      display: flex;
+      flex-direction: row;
+      width: 24%;
+      padding: 20%;
+      position:absolute;
+      z-index:1;
+     }
+     div#redes{
+      display:none
+     }
+    
   }
   
   @media (max-width: 320px) {
@@ -503,5 +526,6 @@ h1{
       font-size: 35%;
       padding-left: 10%;
     }
+    
       
   }
