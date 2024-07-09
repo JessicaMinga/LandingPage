@@ -456,9 +456,13 @@ h1{
       display: flex;
       flex-direction: row;
       width: 24%;
+      height: 20px;
       padding: 20%;
       position:absolute;
       z-index:1;
+     }
+     img#red{
+      height: 100%;
      }
      div#redes{
       display:none
